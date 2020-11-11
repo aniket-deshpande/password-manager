@@ -41,18 +41,4 @@ def run():
     quit()
 
 
-def unlock():
-    i = 0
-    clear()
-    master = input("Unlock the manager: ")
-    if master == "0321":
-        run()
-    else:
-        while i < 5:
-            print("This is the wrong pin")
-            unlock()
-        print("Too many incorrect entries. Closing program now...")
-        time.sleep(2)
-        quit()
-        
-unlock()
+run()
