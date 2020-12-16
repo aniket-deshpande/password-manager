@@ -2,7 +2,7 @@ from os import system, name
 import time
 
 def clear():  
-    if name == 'nt': 
+    if name == 'nt':  #checking if OS is windows, clear() lets you clear the terminal
         _ = system('cls')
 
 clear()
